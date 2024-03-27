@@ -1,1 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root{
+  --regular-gray:#EAECF0;
+  --light-gray:#f2f4f7;
+  --gray:#667085;
+  --white:#ffffff;
+  --black:#101828;
+  --dark-gray-shadow:rgba(16, 24, 40, 0.05);
+  --blue-gray:#344054;
+  --purple:#7f56d9;
+  --dark-purple:#6941c6;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+
+.btn {
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px var(--dark-gray-shadow);
+}
+
+.button-primary {
+  padding: 10px 18px;
+  background: var(--purple);
+  border: 1px solid var(--purple);
+  color: var(--white);
+  text-decoration: none;
+  margin: 16px 0 32px 0;
+
+}
+.button-primary:hover{
+  background: var(--dark-purple);
+}
+
+.button-primary:focus{
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F4EBFF;
+border-radius: 8px;
+}
+
+.button-secondary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-gray);
+  background: var(--white);
+  border: 1px solid #d0d5dd;
+  padding: 10px 16px;
+  margin: 16px 0 32px 0;
+  gap: 10px;
+}
+
+.button-secondary:hover{
+  background: var(--light-gray);
+}
+.button-secondary:active{
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #F2F4F7;
+border-radius: 8px;
+}
+
+.input {
+  gap: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  position: relative;
+  padding: 12px 14px 12px 42px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+.lg{
+  font-size: 18px;
+line-height: 28px;
+}
+.md {  
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sm {  
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.xs{
+  font-size: 12px;
+line-height: 18px;
+}
+.clr-white{
+  color: var(--white);
+}
+.clr-gray{
+  color: var(--regular-gray);
+}
+.success{
+  background: #ECFDF3;
+  color: #027A48;
+}
+.hold{
+  background: #F2F4F7;
+  color: #344054;
+}
+.error{
+  color: #B42318;
+  background-color: rgb(241, 231, 231);
+}
+.badge{
+  border-radius: 16px;
+  padding: 2px 8px;
+  font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+margin: 16px 24px;
+
+}
+
+#scroll-style::-webkit-scrollbar-track {
+  border: 1px solid #f9fafb;
+  background-color: #f9fafb;
+  border-radius: 5px;
+}
+
+#scroll-style::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  background-color:var(--blue-gray);
+  border-radius: 5px;
+}
+
+#scroll-style::-webkit-scrollbar-thumb {
+  background-color: var(--blue-gray);
+  border-radius: 5px;
+}
+

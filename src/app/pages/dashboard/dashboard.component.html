@@ -1,0 +1,205 @@
+<div class="body">
+
+<app-sidenav></app-sidenav>
+    <main class="background">
+        <div class="main-body">
+            <header class="header">
+                <div class="heading-text">
+                    <h1 class="heading">
+                        Welcome back, Olivia
+                    </h1>
+                    <h2 class="sub-heading">
+                        Track, manage and forecast your customers and orders.
+                    </h2>
+                </div>
+
+                <div class="btn-container">
+                    <a class="btn button-secondary">
+                        <img class="img" src="assets/images/import.svg" alt="import-logo">
+                        Import
+                    </a>
+                    <a class="btn button-primary" routerLink="/setting">
+                        <img class="img" src="assets/images/plus.svg" alt="add-logo">
+                        Add
+                    </a>
+                </div>
+            </header>
+
+            <section class="card-section">
+                <div class="data-card">
+                    <div class="data-header">
+                        <p>
+                            Total Customers
+                        </p>
+                        <a href="">
+                            <img class="img" src="assets/images/three-dots.png" alt="three-dots">
+                        </a>
+                    </div>
+
+                    <div class="data-info">
+                        <div class="left-info">
+                            <p class="heading-info" id="total-customer">
+                                
+                            </p>
+                            <div class="sub-heading-info">
+                                <img class="img" src="assets/images/green-arrow-up.svg" alt="arrow">
+                                <span class="success">
+                                    40%
+                                </span>
+                                <p>
+                                    vs last month
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right-info">
+                            <img src="assets/images/Line1.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="data-card">
+                    <div class="data-header">
+                        <p>
+                            Members
+                        </p>
+                        <a href="">
+                            <img class="img" src="assets/images/three-dots.png" alt="three-dots">
+                        </a>
+                    </div>
+
+                    <div class="data-info">
+                        <div class="left-info">
+                            <p class="heading-info">
+                                1,210
+                            </p>
+                            <div class="sub-heading-info">
+                                <img class="img" src="assets/images/red-arrow-down.svg" alt="arrow">
+                                <span class="error">
+                                    10%
+                                </span>
+                                <p>
+                                    vs last month
+                                </p>
+                            </div>
+                        </div>
+                        <div class="right-info">
+                            <img src="assets/images/Line2.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="data-card">
+                    <div class="data-header">
+                        <p>
+                            Active Now
+                        </p>
+                        <a href="">
+                            <img class="img" src="assets/images/three-dots.png" alt="three-dots">
+                        </a>
+                    </div>
+
+                    <div class="data-info">
+
+                        <div class="left-info">
+                            <p class="heading-info">
+                                316
+                            </p>
+                            <div class="sub-heading-info">
+                                <img class="img" src="assets/images/green-arrow-up.svg" alt="arrow">
+                                <span class="success">
+                                    20%
+                                </span>
+                                <p>
+                                    vs last month
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="right-info">
+                            <img src="assets/images/Line3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="filter-section">
+                <form class="input-container">
+                    <label class="search-bar-img" for="">
+                        <img src="assets/images/search.svg" alt="search">
+                    </label>
+                    <input class="input" autocomplete="off" type="text" id="searchInput" name="search"
+                        placeholder="Search">
+                </form>
+
+                <div class="filter-lefthalf">
+                    <button class="btn input-container filter">
+                        <img src="assets/images/pyramid-line.svg" alt="icon">
+                        <p>
+                            More filters
+                        </p>
+                    </button>
+                    <div class="filter-container">
+
+                        <div class="filter-items">
+                            <p>
+                                All time
+                            </p>
+                            <img src="assets/images/cross-icon.svg" alt="icon">
+                        </div>
+
+                        <div class="filter-items">
+                            <p>
+                                US,AU,+4
+                            </p>
+                            <img src="assets/images/cross-icon.svg" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="table-section" id="scroll-style">
+                <div class="table-border">
+               <app-table></app-table>
+
+
+                    <div class="table-footer">
+                        <div class="left-table-footer">
+                            <a  class="btn button-secondary" style="font-weight: 500; margin: 12px 0 16px 0;">
+                                Previous
+                            </a>
+                            <a class="btn button-secondary" style="font-weight: 500;margin: 12px 0 16px 0;">
+                                Next
+                            </a>
+                        </div>
+
+                        <div class="right-table-footer">
+                            <p>
+                                Page 1 of 10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+         
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-elements">
+                        <img src="assets/images/left-arrow.svg" alt="left-arrow">
+                        <p>
+                            Page 1 of 10
+                        </p>
+                        <img src="assets/images/right-arrow.svg" alt="right-arrow">
+
+                    </div>
+                </div>
+
+            </footer>
+           
+        </div>
+        
+    </main>
+
+</div>

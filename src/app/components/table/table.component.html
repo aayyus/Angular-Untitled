@@ -1,0 +1,106 @@
+
+  <table class="table">
+    <thead>
+    <tr>
+        <th class="table-heading th column-1">
+            <label class="container-checkbox-header">
+                <div class=" checkmark">
+                </div>
+                <input type="checkbox" class="checkmark-default">
+                <label>
+                    Company
+                </label>
+            </label>
+            <img src="assets/images/arrow-down.svg" alt="">
+        </th>
+        <th class="th">
+            Lisence Use
+        </th>
+        <th class="th" style="text-align: center;">
+            Status
+        </th>
+        <th class="th">
+            Users
+        </th>
+        <th class="th">
+            About
+        </th>
+    </tr>
+</thead>
+<tr *ngFor="let data of storageData; let id = index">
+  <td class="column-1">
+    <label class="container-checkbox">
+      <div class="checkmark"></div>
+      <input type="checkbox" class="checkmark-default" id="checkbox-one">
+    </label>
+    <div class="img-box">
+      <img class="img-profile" id="image" [src]="data.image" alt="logo">
+    </div>
+    <div class="logo-name">
+      <p class="logo-heading">
+        {{ data.firstName }} {{ data.lastName }}
+      </p>
+      <p class="logo-subheading">
+        {{ data.email }}
+      </p>
+    </div>
+  </td>
+
+  <td>
+    <div class="progress-container">
+      <div class="progress" style="width: 40%;"></div>
+    </div>
+  </td>
+  <td class="td-center">
+    <p class="badge error">
+      {{ data.role }}
+    </p>
+  </td>
+
+  <td>
+    <div class="avatars">
+      <span class="avatar">
+        <img src="assets/images/account-photo.png" />
+      </span>
+      <span class="avatar">
+        <img src="assets/images/acc-photo-1.png" />
+      </span>
+      <span class="avatar">
+        <img src="assets/images/acc-photo-2.png" />
+      </span>
+      <span class="avatar">
+        <img src="assets/images/acc-photo-3.png" />
+      </span>
+      <span class="avatar">
+        <img src="assets/images/acc-photo-4.png" />
+      </span>
+
+      <span class="extra">
+        +8
+      </span>
+    </div>
+  </td>
+
+  <td>
+    <p class="about-heading">
+      {{ data.description }}
+    </p>
+    <p class="about-subheading">
+      Time tracking, invoicing and expenses
+    </p>
+  </td>
+
+  <td class="action-block">
+    <!-- <a (click)="removeRow(id)"> -->
+      <img src="assets/images/bin-icon.svg" alt="dustbin-icon">
+    <!-- </a> -->
+    <a [href]="'./editSetting.html?' + id">
+      <img src="assets/images/edit-icon.svg" alt="edit-icon">
+    </a>
+  </td>
+</tr>
+
+   <tbody  id="table">
+
+   </tbody>
+</table>

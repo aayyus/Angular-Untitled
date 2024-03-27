@@ -1,0 +1,117 @@
+<nav class="nav">
+    <div class="mobile-nav">
+        <div class="left-nav" id="hamburger" (click)="toggleSideNav()">
+            <img src="assets/images/dashboard-hamburger.png" alt="hamburger">
+        </div>
+        <div class="right-nav">
+            <img src="assets/images/logo.png" alt="">
+            <img class="mobile-logo-text" src="assets/images/Vector.svg" alt="logo-text">
+        </div>
+
+    </div>
+    <div class="side-nav"  id="scroll-style">
+        <div class="upper-sidenav" id="sidenav" [style.width.px]="sideNavWidth">
+            <div class="header-uppernav">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="logo">
+
+                    <img class="desktop-logo-text" src="assets/images/desktop-logo-text.svg" alt="logo-text">
+                </div>
+
+                <form class="input-nav-container">
+                    <label class="search-bar-img" for="search">
+                        <img src="assets/images/search-img-light.svg" alt="search">
+                    </label>
+                    <input autocomplete="off" class="input-nav input" type="text" id="search" name="search"
+                        placeholder="Search" style="width: 300px;">
+                </form>
+            </div>
+            <div class="section-uppernav">
+                <ul>
+                    <li class="sidenav-items">
+                        <img src="assets/images/icon-home.svg">
+                        <p>Home</p>
+                    </li>
+                    <li class="sidenav-items">
+                        <img src="assets/images/Icon-dashboard.svg">
+                        <p>Dashboard</p>
+                    </li>
+                    <li class="sidenav-items">
+                        <img src="assets/images/Icon-project.svg">
+                        <p>Project</p>
+                    </li>
+                    <li class="sidenav-items">
+                        <img src="assets/images/Icon-tasks.svg">
+                        <p>Task</p>
+                    </li>
+                    <li class="sidenav-items">
+                        <img src="assets/images/Icon-reporting.svg">
+                        <p>Reporting</p>
+                    </li>
+                    <li class="sidenav-items ">
+                        <img src="assets/images/Icon-users.svg">
+                        <p>Users</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lower-sidenav">
+                <ul>
+                    <li class="sidenav-items ">
+                        <img src="assets/images/Icon-dashboard.svg">
+                        <p>Support</p>
+                    </li>
+                    <a  routerLink="/settings"> <li class="sidenav-items">
+                        <img src="assets/images/Icon-settings.svg">
+                        <p>Settings</p>
+                    </li></a>
+                </ul>
+
+                <div class="progress-block">
+                    <span class="percent-block">
+                        80%
+                    </span>
+                    <img class="round-progress" src="assets/images/round-progress.svg" alt="progress-bar">
+                    <div class="progress-text-1">
+                        <p class="sm medium clr-white">
+                            Used space
+                        </p>
+                        <p class="sm regular clr-gray">
+                            Your team has used 80% of your
+                            <br> available space. Need
+                            more?
+                        </p>
+                    </div>
+
+                    <div class="progress-text-2 sm semibold">
+                        <p class="clr-gray">
+                            Dismiss
+                        </p>
+                        <p class="clr-white">
+                            Upgrade plan
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lower-logout">
+                    <div class="account-block">
+                        <div class="img-box">
+                        <img src="assets/images/acc-photo-1.png" alt="user">
+                    </div>
+                        <div class="account-name-block">
+                            <p class="sm semibold">
+                                Olivia Rhye
+                            </p>
+                            <p class="sm regular">
+                                olivia@untitledui.com
+                            </p>
+                        </div>
+                        <a routerLink="">
+                        <img class="logout-img" src="assets/images/icon-logout.svg" alt="">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
